@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-06-servo-sweep",
+  "eyebrow": "PICOKIT // LESSON 06",
+  "title": "PICOKIT // SERVO SWEEP",
+  "subtitle": "SG90 SERVO SWEEP AND AUTHENTICATED HEARTBEAT",
+  "accent": "#47FF66",
+  "dim": "#2C9E3F",
+  "white": "#DAF6E9",
+  "cyan": "#7FD8E0",
+  "bg": "#041107",
+  "bg_edge": "#010502",
+  "icon": "servo",
+  "panel_status": "ANGLE 90 / 180  ·  RISING  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "SERVO",
+      "value": "90 deg"
+    },
+    {
+      "label": "ANGLE",
+      "value": "90 / 180"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-36 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00006  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] servo angle 90  rising  onboard blink",
+    "[+] ack sent  rssi -36  snr 9.0"
+  ],
+  "categories": [
+    "SERVO",
+    "ANGLE",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "SWEEP-01",
+      "label": "rise",
+      "value": "0-180"
+    },
+    {
+      "tag": "SWEEP-02",
+      "label": "hold",
+      "value": "180"
+    },
+    {
+      "tag": "SWEEP-03",
+      "label": "fall",
+      "value": "180-0"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ SERVO ]=="
+  ],
+  "layout": "panel",
+  "stat": "90 deg"
+}
